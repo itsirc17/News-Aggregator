@@ -28,4 +28,3 @@ The core of this application relies on a fixed-size thread pool initiated at run
 The parallel architecture significantly reduces execution time compared to sequential processing. During testing on WSL with an Intel i5-12450H processor and a dataset of 5,516 JSON files:
 * **Speedup:** Achieved a speedup of ~2.5x using 6 threads.
 * **Efficiency:** The performance curve demonstrates near-asymptotic behavior around 4-6 threads. This is primarily bottlenecked by unavoidable sequential file I/O operations and final data sorting requirements.
-* 
